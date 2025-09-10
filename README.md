@@ -45,6 +45,6 @@ It lets you **type text** or **upload an image with text**, then uses simple tex
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/reykista24/ai-text-detector.git
-cd ai-text-detector
+git clone https://github.com/reykista24/ai-text-detector.git](https://github.com/reykista24/ai-model.git
+cd ai-mode
 npm install
