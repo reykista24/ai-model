@@ -1,27 +1,50 @@
-# AiModel
+# 📝 AI vs Human Text Detector (Angular + OCR)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+This project is an **AI-generated text detector** built with **Angular**.  
+It lets you **type text** or **upload an image with text**, then uses simple text-analysis techniques to guess whether the text is more likely written by a **human** or by an **AI tool**.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## ✨ Features
+- 📸 **Scan text from images** using [Tesseract.js](https://github.com/naptha/tesseract.js) (OCR).  
+- ⌨️ **Type or paste text** directly into the app.  
+- 🧠 **Analyzes writing patterns**, such as:
+  - Sentence length & variation  
+  - Word variety & repetition  
+  - Use of common words (stopwords)  
+  - Punctuation & capital letters  
+  - Randomness of characters  
+  - Cliché phrases  
+- ✅ Gives a **verdict**:
+  - **Likely AI-generated**
+  - **Likely human-written**
+  - **Uncertain / Mixed**
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🖼️ How It Works (Simple Explanation)
+1. **Upload or Type**  
+   - Either type text directly or upload an image (screenshot, photo, scanned paper).  
+   - If an image is uploaded, the app reads the text using OCR.  
 
-## Build
+2. **Text Analysis**  
+   - The app looks at how sentences are structured, how often words repeat, and other patterns.  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3. **Verdict**  
+   - Based on the analysis, the app estimates if the text is human or AI-written.  
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🚀 Getting Started (For Developers)
 
-## Running end-to-end tests
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16+ recommended)  
+- [Angular CLI](https://angular.io/guide/setup-local)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Install
+Clone the repo and install dependencies:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```bash
+git clone https://github.com/reykista24/ai-text-detector.git
+cd ai-text-detector
+npm install
