@@ -48,3 +48,11 @@ Clone the repo and install dependencies:
 git clone https://github.com/reykista24/ai-text-detector.git](https://github.com/reykista24/ai-model.git
 cd ai-mode
 npm install
+```
+
+### Run the App
+```bash
+ng serve
+```
+Open your browser at:
+👉 http://localhost:4200/
